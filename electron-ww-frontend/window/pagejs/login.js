@@ -1,4 +1,5 @@
 const { ipcRenderer } = require('electron');
+
 const axios = require('axios');
 const md5 = require('js-md5');
 document.getElementById('min').addEventListener('click', toMin)

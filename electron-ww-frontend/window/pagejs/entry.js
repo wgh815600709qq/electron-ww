@@ -16,3 +16,11 @@ document.getElementById('addFriend').addEventListener('click', toOpenAddFriendPa
 function toOpenAddFriendPannel() {
     ipcRenderer.send('openFriendPannel')
 }
+
+var socket = io('http://localhost:8090')
+socket.on('connect', function() {
+    console.log('connected')
+})
+socket.on('message', (obj) => {
+    console.log(obj)
+})
