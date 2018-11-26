@@ -2,9 +2,9 @@
   "name": "electron-quick-start",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "window/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "gulp && electron ."
   },
   "keywords": [
     "Electron",
@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "js-md5": "^0.7.3"
+    "gulp": "^3.9.1",
+    "js-md5": "^0.7.3",
+    "shelljs": "^0.8.2"
   }
 }

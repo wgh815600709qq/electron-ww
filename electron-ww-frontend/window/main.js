@@ -1,8 +1,8 @@
 
 const { app, BrowserWindow, ipcMain } = require('electron')
-const LoginWindow = require('./window/controller/login')
-const MainWindow = require('./window/controller/entry')
-const FriendPannelWindow = require('./window/controller/friendPannel')
+const LoginWindow = require('./controller/login')
+const MainWindow = require('./controller/entry')
+const FriendPannelWindow = require('./controller/friendPannel')
 class App {
   constructor() {
     this.loginWindow = null;
